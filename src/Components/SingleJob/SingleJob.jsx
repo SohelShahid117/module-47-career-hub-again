@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BsCurrencyDollar } from "react-icons/bs";
+import { Link } from "react-router-dom";
 //47-3 Load Jobs Data For The Page
 //47-4 Set Page Layout And Display Featured Jobs
 
@@ -54,7 +55,10 @@ const SingleJob = ({ job }) => {
             </h2>
           </div>
           <div className="card-actions">
-            <button className="btn btn-primary">View Details</button>
+            {/* <button className="btn btn-primary">View Details</button> */}
+            <Link to={`/SingleJob/${id}`}>
+              <button className="btn btn-primary">View Details</button>
+            </Link>
           </div>
         </div>
       </div>

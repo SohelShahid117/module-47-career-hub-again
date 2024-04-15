@@ -7,8 +7,10 @@ import Header from '../Header/Header';
 const Root = () => {
     return (
         <div>
-            <Header></Header>
-            <Outlet></Outlet>
+           <div className='max-w-6xl mx-auto'>
+                <Header></Header>
+                <Outlet></Outlet>
+           </div>
             {/* <p>hi</p> */}
             <Footer></Footer>
         </div>

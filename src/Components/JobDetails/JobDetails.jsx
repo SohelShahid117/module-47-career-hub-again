@@ -14,6 +14,17 @@ const JobDetails = () => {
   return (
     <div>
       <h2>Job ID : {id}</h2>
+      <h2>Job Details of : {job.job_title}</h2>
+      <div className="grid gap-5 md:grid-cols-4">
+        <div className="border md:col-span-3 border-red-700 rounded">
+          <h2 className="text-6xl">Details coming here</h2>
+          <p>{job.company_name}</p>
+        </div>
+        <div className="border p-5">
+          <h2 className="text-4xl">Description everything</h2>
+          <button className="btn btn-primary">Submit Now</button>
+        </div>
+      </div>
     </div>
   );
 };
